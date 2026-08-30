@@ -201,3 +201,47 @@ li {
 [data-theme="dark"] .gh-dark {
     display: block;
 }
+
+/* "Now" Section Layout */
+.now-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+    .now-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+    }
+}
+
+.now-card {
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.02); /* Very subtle background */
+}
+
+/* Adjust subtle background for Dark Mode */
+[data-theme="dark"] .now-card {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.now-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.now-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.now-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
