@@ -1,23 +1,13 @@
 /* Base Variables */
 :root {
-    --bg-color: #ffffff;
-    --text-main: #111111;
-    --text-muted: #666666;
-    --link-color: #0055ff;
-    --link-hover: #0033aa;
-    --border-color: #eeeeee;
-    /* Updated to your monospace stack */
-    --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
-}
-
-/* Dark Mode Theme */
-[data-theme="dark"] {
     --bg-color: #121212;
     --text-main: #e0e0e0;
     --text-muted: #a0a0a0;
     --link-color: #66b3ff;
     --link-hover: #99ccff;
     --border-color: #333333;
+    /* Updated to your monospace stack */
+    --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
 }
 
 /* Reset & Global */
@@ -40,7 +30,7 @@ body {
 
 /* Layout */
 .page {
-    max-width: 720px;
+    max-width: 780px;
     margin: 0 auto;
     padding: 2rem 1rem 4rem;
 }
@@ -153,7 +143,7 @@ li {
     }
     
     .time {
-        min-width: 140px;
+        min-width: 180px;
         color: var(--text-muted);
         font-size: 0.9rem;
         margin-top: 0.2rem;
